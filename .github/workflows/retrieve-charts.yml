@@ -1,0 +1,15 @@
+name: retrieve-charts
+on:
+  schedule:
+    - cron: '0 2 * * *'
+jobs:
+  retrieve-charts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run retrieve chart script
+        run: ./.github/scripts/retrieve-charts.sh
+        shell: bash
+      - uses: actions-x/commit@v2
+        with:
+          name: Actions

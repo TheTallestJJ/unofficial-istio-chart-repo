@@ -1,0 +1,7 @@
+manifests/charts/base
+manifests/charts/gateways
+manifests/charts/gateways
+manifests/charts/istio-cni
+manifests/charts/istio-control/istio-discovery
+manifests/charts/istio-operator
+manifests/charts/istiod-remote
