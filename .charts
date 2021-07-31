@@ -1,6 +1,6 @@
 manifests/charts/base
-manifests/charts/gateways
-manifests/charts/gateways
+manifests/charts/gateways/istio-ingress
+manifests/charts/gateways/istio-egress
 manifests/charts/istio-cni
 manifests/charts/istio-control/istio-discovery
 manifests/charts/istio-operator

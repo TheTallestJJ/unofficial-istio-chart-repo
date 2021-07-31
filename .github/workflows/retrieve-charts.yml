@@ -2,6 +2,7 @@ name: retrieve-charts
 on:
   schedule:
     - cron: '0 2 * * *'
+  workflow_dispatch:
 jobs:
   retrieve-charts:
     runs-on: ubuntu-latest
