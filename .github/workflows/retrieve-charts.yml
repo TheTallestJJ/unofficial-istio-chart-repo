@@ -11,6 +11,7 @@ jobs:
       - name: Run retrieve chart script
         run: ./.github/scripts/retrieve-charts.sh
         shell: bash
-      - uses: actions-x/commit@v2
+      - uses: actions-x/commit@v6
+        name: push
         with:
           name: Actions
