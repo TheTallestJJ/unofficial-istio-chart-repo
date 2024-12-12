@@ -1,4 +1,4 @@
-#!/bin/bash -xe
+#!/bin/bash -x
 
 curl https://api.github.com/repos/istio/istio/releases | jq '.[].tag_name' -r > versions-new
 diff .versions versions-new | grep '>' | sed 's/> //g' > diff-versions
